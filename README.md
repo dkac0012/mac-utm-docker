@@ -6,7 +6,9 @@ utm을 사용하는 이유는 docker는 linux와 함께 개발되어 linux기반
 
 ## utm download & create iso
 
-download link : https://mac.getutm.app/
+utm download link : https://mac.getutm.app/
+iso download link : https://releases.ubuntu.com/jammy/
+
 
 
 ![image](https://github.com/user-attachments/assets/ade15ce0-5cf9-448c-af4d-6c4a10b3202b)
@@ -28,8 +30,11 @@ Emulate : 다양한 CPU 아키텍처를 실행할 수 있지만 성능이 느릴
 
 이미지 하위에 생성되는 디렉토리를 관리하기 위한 설정으로 docker의 volume mount나 bind mount와 비슷한 목적으로 사용되는 것으로 보입니다.
 
-####
+#### iso 잘못된 이미지 
 ![image](https://github.com/user-attachments/assets/525eada8-d1b9-47e9-bd90-ee37bbb79ab6)
+iso의 이미지를 amd 로 선택하여 다음과 같이 실행 중 오류가 발생하였습니다. mac과 호환되는 arm image로 바꿔주면 아래와 같이 정상 실행됩니다.
+
+![image](https://github.com/user-attachments/assets/6fe9a15b-8943-4ff1-abc0-8368ff6e71e5)
 
 
 ## docker 
