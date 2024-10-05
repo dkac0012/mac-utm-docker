@@ -39,5 +39,28 @@ iso의 이미지를 amd 로 선택하여 다음과 같이 실행 중 오류가 �
 
 ## docker 
 
+```bash
+sudo apt-get install docker.io
+```
 
+version 확인
+```bash
+usernamegservername:"$ docker --version
+Docker version 24.0.7, build
+```
+권한 부여
+```bash
+sudo usermod -aG docker $USER
+newgrp docker
+groups에 docker가 올라가있다면 잘 적용된 것이다.
+```
+
+docker pull mysql
+![image](https://github.com/user-attachments/assets/c05de8cb-8b13-4d58-a9de-1c9cf31f31a8)
+
+docker run --name mysqldb -p 3306:3306 -e MYSQL_ROOT_PASSWORD=root -d mysql:latest
+![image](https://github.com/user-attachments/assets/f4b29fda-713b-46c1-9457-fb16cb50e809)
+
+docker mysql에 진입 성공
+![image](https://github.com/user-attachments/assets/873c523d-6fba-4982-b76b-7fdfcef8e398)
 
